@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .the-svg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #ddd;
+      }
+
+      .the-svg text {
+        font-size: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <svg class="the-svg">
+      <defs>
+        <mask id="mask-circle">
+          <circle cx="50" cy="50" r="40"></circle>
+        </mask>
+        <style>
+          #mask-circle circle {
+            fill: white;
+          }
+        </style>
+      </defs>
+      <!-- g: 그룹태그 -->
+      <g mask="url(#mask-circle)">
+        <text x="10" y="100">Hello SVG!</text>
+      </g>
+    </svg>
+  </body>
+</html>

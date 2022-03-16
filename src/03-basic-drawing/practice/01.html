@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .shapes {
+        width: 600px;
+        height: 400px;
+        background: #ddd;
+      }
+
+      rect {
+        fill: orange;
+        stroke: dodgerblue;
+        stroke-width: 10;
+      }
+
+      ellipse {
+        /** css 스타일링이 우선 순위가 높음 */
+        fill: #fff000;
+      }
+    </style>
+  </head>
+  <body>
+    <svg class="shapes">
+      <rect x="10" y="20" width="200" height="100"></rect>
+      <rect x="50" y="120" rx="" ry="" width="100" height="100"></rect>
+      <circle cx="350" cy="250" r="30"></circle>
+      <ellipse
+        cx="200"
+        cy="200"
+        rx="100"
+        ry="50"
+        fill="red"
+        stroke="green"
+        stroke-width="20"
+      ></ellipse>
+      <line x1="10" x2="400" y1="30" y2="300" stroke="blue"></line>
+      <!-- <polyline
+        points="0 0, 200 100, 150 300"
+        stroke="red"
+        stroke-width="10"
+      ></polyline> -->
+      <polygon
+        points="0 0, 200 100, 150 300"
+        stroke="red"
+        stroke-width="10"
+      ></polygon>
+    </svg>
+  </body>
+</html>
