@@ -118,6 +118,7 @@
           function render() {
             dx = targetPos.x - reactMonInfo.x;
             dy = targetPos.y - reactMonInfo.y;
+            /* 스크롤 이동 시 엘리먼트 이동의 감속 효과를 주기 위해 계산식에 포함 */
             reactMonInfo.x = reactMonInfo.x + dx * easeValue;
             reactMonInfo.y = reactMonInfo.y + dy * easeValue;
             reactMonElem.style.transform = `translate3d(${reactMonInfo.x}px, ${reactMonInfo.y}px, 0px)`;

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box-container {
+        display: flex;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        background: rgba(255, 255, 0, 0.7);
+        transition: 2s;
+        /* transition: 1s cubic-bezier(0.25, 0.1, 0.49, 1.73); */
+      }
+      .box:hover {
+        width: 200px;
+        background: teal;
+        /* 다른 box element 에 영향을 미치지 않고 화면이 커짐 */
+        /* transform: scale(2) rotate(15deg); */
+        /* transform: skew(30deg); */
+        /* transform: translate(30px, 10px); */
+        /* transform-origin: right bottom; */
+        /* transform: scale(2); */
+        /* transform-origin: 50% 50%; */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Transform</h1>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi sint,
+      cupiditate necessitatibus numquam quaerat culpa tempora velit a, quasi
+      obcaecati eos nihil sit, voluptatem tempore odio officiis aliquam cum.
+      Nostrum!
+    </p>
+    <div class="box-container">
+      <div class="box">A</div>
+      <div class="box">B</div>
+      <div class="box">C</div>
+      <div class="box">D</div>
+      <div class="box">E</div>
+    </div>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi sint,
+      cupiditate necessitatibus numquam quaerat culpa tempora velit a, quasi
+      obcaecati eos nihil sit, voluptatem tempore odio officiis aliquam cum.
+      Nostrum!
+    </p>
+  </body>
+</html>
